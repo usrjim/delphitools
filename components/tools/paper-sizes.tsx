@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown, Layers, LayoutGrid, Search, Upload, X } from "lucide-react";
-import { PDFDocument } from "pdf-lib";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -63,25 +62,6 @@ export function PaperSizesTool() {
         URL.revokeObjectURL(img.src);
       };
       img.src = URL.createObjectURL(file);
-    } else if (file.type === "application/pdf") {
-      try {
-        const arrayBuffer = await file.arrayBuffer();
-        const pdf = await PDFDocument.load(arrayBuffer);
-        const pageCount = pdf.getPageCount();
-        if (pageCount === 0) {
-          console.error("PDF has no pages");
-          return;
-        }
-        const firstPage = pdf.getPage(0);
-        const { width, height } = firstPage.getSize();
-        // PDF dimensions are in points (72 per inch)
-        const widthMm = (width / 72) * 25.4;
-        const heightMm = (height / 72) * 25.4;
-        setUploadedDimensions(null); // Clear pixel dimensions (PDF gives us mm directly)
-        setSearchQuery(`${Math.round(widthMm)}x${Math.round(heightMm)}mm`);
-      } catch (error) {
-        console.error("Failed to parse PDF:", error);
-      }
     }
 
     // Reset file input to allow re-uploading the same file

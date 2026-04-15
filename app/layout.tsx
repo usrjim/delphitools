@@ -10,11 +10,6 @@ export const metadata: Metadata = {
   title: "delphitools",
   description:
     "A collection of small, low stakes and low effort tools. No logins, no registration, no data collection.",
-  icons: {
-    icon: "/delphi-lowlod.png",
-    shortcut: "/delphi-lowlod.png",
-    apple: "/delphi-lowlod.png",
-  },
 };
 
 export default function RootLayout({

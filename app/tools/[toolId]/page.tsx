@@ -37,8 +37,6 @@ const toolComponents: Record<string, React.ComponentType> = {
   "watermarker": dynamic(() => import("@/components/tools/watermarker").then(mod => mod.WatermarkerTool)),
   "contrast-checker": dynamic(() => import("@/components/tools/contrast-checker").then(mod => mod.ContrastCheckerTool)),
   "colorblind-sim": dynamic(() => import("@/components/tools/colorblind-sim").then(mod => mod.ColorblindSimTool)),
-  "background-remover": dynamic(() => import("@/components/tools/background-remover").then(mod => mod.BackgroundRemoverTool)),
-  "zine-imposer": dynamic(() => import("@/components/tools/zine-imposer").then(mod => mod.ZineImposerTool)),
   "gradient-genny": dynamic(() => import("@/components/tools/gradient-genny").then(mod => mod.GradientGennyTool)),
   "sci-calc": dynamic(() => import("@/components/tools/sci-calc").then(mod => mod.SciCalcTool)),
   "graph-calc": dynamic(() => import("@/components/tools/graph-calc").then(mod => mod.GraphCalcTool)),
@@ -48,9 +46,6 @@ const toolComponents: Record<string, React.ComponentType> = {
   "unit-converter": dynamic(() => import("@/components/tools/unit-converter").then(mod => mod.UnitConverterTool)),
   "encoder": dynamic(() => import("@/components/tools/encoder").then(mod => mod.EncoderTool)),
   "image-tracer": dynamic(() => import("@/components/tools/image-tracer").then(mod => mod.ImageTracerTool)),
-  "guillotine-director": dynamic(() => import("@/components/tools/guillotine-director").then(mod => mod.GuillotineDirectorTool)),
-  "pdf-preflight": dynamic(() => import("@/components/tools/pdf-preflight").then(mod => mod.PdfPreflightTool)),
-  "imposer": dynamic(() => import("@/components/tools/imposer").then(mod => mod.ImposerTool)),
   "paste-image": dynamic(() => import("@/components/tools/paste-image").then(mod => mod.PasteImageTool)),
   "image-clipper": dynamic(() => import("@/components/tools/image-clipper").then(mod => mod.ImageClipperTool)),
 };

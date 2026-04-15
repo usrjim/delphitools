@@ -46,13 +46,6 @@ Long live the handmade web.
 - glyph browser
 - font file explorer
 
-### print & production
-
-- pdf preflight
-- guillotine director
-- zine imposer
-- print imposer
-
 ### other tools
 
 - text scratchpad
