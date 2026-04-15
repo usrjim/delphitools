@@ -30,7 +30,7 @@ export function IosAppCard() {
             {/* Mobile layout */}
             <div className="flex flex-col gap-4 p-8 sm:hidden">
               <img
-                src="/dt-icon.jpg"
+                src="/tools/delphitools/dt-icon.jpg"
                 alt="delphitools app icon"
                 className="size-16 rounded-xl shadow-sm"
               />
@@ -81,7 +81,7 @@ export function IosAppCard() {
           </div>
           {/* Desktop: overlapping etching */}
           <img
-            src="/delphi-boxes.png"
+            src="/tools/delphitools/delphi-boxes.png"
             alt="delphi carrying a stack of tool boxes"
             className="hidden sm:block absolute right-6 -bottom-16 h-[calc(100%+8rem)] w-auto pointer-events-none"
           />

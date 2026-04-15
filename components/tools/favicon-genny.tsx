@@ -274,11 +274,11 @@ export function FaviconGennyTool() {
           <div className="space-y-2">
             <label className="font-bold">HTML Snippet</label>
             <pre className="p-4 rounded-lg border bg-muted/50 text-sm font-mono overflow-x-auto">
-{`<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">`}
+{`<link rel="icon" type="image/png" sizes="16x16" href="/tools/delphitools/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/tools/delphitools/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/tools/delphitools/favicon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/tools/delphitools/favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/tools/delphitools/favicon-512x512.png">`}
             </pre>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function Home() {
       <div className="mb-12">
         <div className="flex items-center gap-3 mb-4">
           <img
-            src="/delphi-friday.png"
+            src="/tools/delphitools/delphi-friday.png"
             alt="delphitools logo"
             width={1000}
             height={48}

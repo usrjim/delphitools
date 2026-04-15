@@ -21,7 +21,7 @@ import { getShavianLetter } from "@/lib/shavian/phoneme-map";
 const shavianFontFace = `
 @font-face {
   font-family: 'Noto Sans Shavian';
-  src: url('/fonts/NotoSansShavian-Regular.woff2') format('woff2');
+  src: url('/tools/delphitools/fonts/NotoSansShavian-Regular.woff2') format('woff2');
   font-display: swap;
 }
 `;
